@@ -29,8 +29,8 @@ public class TwitLive extends HttpServlet{
 		
 		if(twitter_id != null){
 
-				//URL pythonAPI = new URL("http://twitlive123.heroku.com/?q="+twitter_id);
-		        URL pythonAPI = new URL(""+twitter_id);
+		        //URL pythonAPI = new URL("http://api.twitter.com/1/statuses/user_timeline.json?suppress_response_codes&trim_user=true&count=200&callback=sendDataToServer&screen_name="+twitter_id);
+				URL pythonAPI = new URL("http://testguide.mygola.com/rapid/multunus?twitterhandle="+twitter_id);
 
 		        URLConnection yc = pythonAPI.openConnection();
 
@@ -38,7 +38,9 @@ public class TwitLive extends HttpServlet{
 		                                new InputStreamReader(
 		                                yc.getInputStream()));
 		        String inputLine;
-
+		        
+		        out.println("The key represents the number visible on the browser in the cloud and the size of the number is deccided by how large the value is.\n");
+		        
 		        while ((inputLine = in.readLine()) != null) 
 		            out.println(inputLine);
 		        in.close();
