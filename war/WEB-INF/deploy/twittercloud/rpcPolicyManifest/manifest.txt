@@ -1,0 +1,3 @@
+# Module twittercloud
+# RPC service class, partial path of RPC policy file
+com.twitter.client.GreetingService, AF0ED54E135112E776A7A1CA96A43338.gwt.rpc

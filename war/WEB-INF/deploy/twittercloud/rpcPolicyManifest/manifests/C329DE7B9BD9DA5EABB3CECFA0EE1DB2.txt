@@ -1,0 +1,2 @@
+serviceClass: com.twitter.client.GreetingService
+path: AF0ED54E135112E776A7A1CA96A43338.gwt.rpc
